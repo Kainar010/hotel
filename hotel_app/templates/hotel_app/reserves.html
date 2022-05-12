@@ -1,0 +1,19 @@
+{% extends 'hotel_app/base.html' %}
+{% block content %}
+<div class="reserves-container">
+    {% for res in reserves %}
+    <div class="reserves-block">
+        <p>{{ res.0 }}Nursultan</p>
+        <p>{{ res.1 }}Myrzagulov</p>
+        <p>{{ res.2 }}LUX</p>
+        <p>{{ res.3 }}family</p>
+    </div>
+    {% endfor %}
+    <div class="reserves-block">
+        <p>Nursultan</p>
+        <p>Myrzagulov</p>
+        <p>LUX</p>
+        <p>family</p>
+    </div>
+</div>
+{% endblock content %}

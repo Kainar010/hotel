@@ -1,0 +1,11 @@
+{% extends "hotel_app/base.html" %}
+{% block content %}
+<div class="welcome">
+    <p>Welcome to</p>
+    <h1>LUXURY HOTEL</h1>
+    <p> The world best hotel!</p>
+</div>
+<div class="reserve-block">
+    <a href={% url 'reserve' %}>Reserve now!</a>
+</div>
+{% endblock content %}

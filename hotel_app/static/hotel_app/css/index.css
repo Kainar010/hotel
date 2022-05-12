@@ -1,0 +1,35 @@
+.welcome {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+.reserve-block {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserve-block a {
+    height: 20%;
+    width: 40%;
+    color: white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 200, 90);
+    align-items: center;
+    transition: 0.5s;
+}
+
+.reserve-block a:hover {
+    background-color: rgba(80, 200, 90, 0.3);
+}

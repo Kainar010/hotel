@@ -1,12 +1,36 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{% static 'hotel_app/css/base.css' %}"/>
+    <link rel="stylesheet" href="{% static 'hotel_app/css/index.css' %}"/>
+    <link rel="stylesheet" href="{% static 'hotel_app/css/reserve.css' %}"/>
+    <link rel="stylesheet" href="{% static 'hotel_app/css/show_room.css' %}"/>
+    <link rel="stylesheet" href="{% static 'hotel_app/css/result.css' %}"/>
+    <title>Hotel</title>
 </head>
 <body>
-    
+    <div class="nav">
+        <div class="nav-block"></div>
+        <div class="nav-block">
+            <a href={% url 'index' %}>Home</a>
+        </div>
+        <div class="nav-block">
+            <a href={% url 'rooms' %}>Rooms</a>
+        </div>
+        <div class="nav-block">
+            <a href={% url 'reserves' %}>Reserves</a>
+        </div>
+        <div class="nav-block">
+            <a href=#>Contact us</a>
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
 </body>
 </html>

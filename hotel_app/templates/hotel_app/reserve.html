@@ -1,0 +1,26 @@
+{% extends "hotel_app/base.html" %}
+{% block content %}
+<form action={% url 'show_room' %} method="post" class="form">
+    {% csrf_token %}
+    <div class="select-container">
+        <div class="select-block">
+            <label for="p_number">Room size</label>
+        <select name="p_number">
+            <option value="single" selected="selected">single</option>
+            <option value="double">double</option>
+            <option value="triple">triple</option>
+            <option value="family">family</option>
+        </select>
+        </div>
+        <div class="select-block">
+            <label for="type">Room type</label>
+            <select name="type">
+                <option value="Standart" selected="selected">Standart</option>
+                <option value="VIP">VIP</option>
+                <option value="LUX">LUX</option>
+            </select>
+        </div>
+    </div>
+    <input type="submit" value="search room"/>
+</form>
+{% endblock content %}
